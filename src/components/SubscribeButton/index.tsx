@@ -17,11 +17,10 @@ export function SubscribeButton({ priceId }: SubscribeButtonProps) {
     } else {
       try {
         const response = await api.post("/subscribe");
-        console.log(response.data);
+        
         const { sessionId } = response.data;
 
         const stripe = await getStripeJs();
-        console.log(stripe);
 
         await stripe.redirectToCheckout({ sessionId });
       } catch (error) {
