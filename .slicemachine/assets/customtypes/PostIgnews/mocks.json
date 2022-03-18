@@ -1,0 +1,21 @@
+{
+  "id": "9c10d7e6-f063-49f3-9b79-457b6b6f5a80",
+  "uid": "sequi-non-cupiditate",
+  "type": "PostIgnews",
+  "data": {
+    "Title": [
+      {
+        "type": "paragraph",
+        "text": "Ut consequat labore elit cillum ullamco voluptate officia aliquip do. Elit in culpa dolor consectetur voluptate irure amet labore qui id officia qui cupidatat.",
+        "spans": []
+      }
+    ],
+    "Content": [
+      {
+        "type": "paragraph",
+        "text": "Aliquip eu tempor cillum officia occaecat sunt eu fugiat nostrud commodo anim aute.",
+        "spans": []
+      }
+    ]
+  }
+}
