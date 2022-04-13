@@ -53,6 +53,7 @@ export const getServerSideProps: GetServerSideProps = async ({
   }
 
   const client = getPrismicClient();
+  
 
   const response = await client.getByUID("PostIgnews", String(slug));
 
