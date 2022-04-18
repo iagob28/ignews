@@ -7,13 +7,9 @@ import styles from "./home.module.scss";
 interface HomeProps {
   product: {
     priceId: string;
-    amount: number;
+    amount: string;
   };
 }
-
-// Cliente side
-// Server side
-// and Static Site Genaration
 
 export default function Home({ product }: HomeProps) {
   return (
@@ -31,7 +27,7 @@ export default function Home({ product }: HomeProps) {
             Get access to all the publications <br />
             <span>for {product.amount} monthly</span>
           </p>
-          <SubscribeButton priceId={product.priceId} />
+          <SubscribeButton />
         </section>
         <img src="/images/avatar.svg" alt="Girl codign" />
       </main>

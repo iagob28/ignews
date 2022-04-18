@@ -25,8 +25,8 @@ export default function Posts({ posts }) {
       <main className={styles.container}>
         <div className={styles.posts}>
           {posts.map((post) => (
-            <Link href={`/posts/preview/${post.slug}`}>
-              <a key={post.slug}>
+            <Link key={post.slug} href={`/posts/preview/${post.slug}`}>
+              <a>
                 <time>{post.updatedAt}</time>
                 <strong>{post.title}</strong>
                 <p>{post.excerpt}</p>
@@ -43,7 +43,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const client = getPrismicClient();
 
   const response = await client.getAllByType("PostIgnews");
-  console.log(JSON.stringify(response, null, 2));
+
   const posts = response.map((post) => {
     return {
       slug: post.uid,
